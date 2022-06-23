@@ -11,10 +11,10 @@ The R scripts are used to:
 # References
 
 <div id="Golan2014"></div>
-- [1] https://dougspeed.com/pcgc-regression/
++ 1 https://dougspeed.com/pcgc-regression/
 
 <div id="Yang2011"></div>
-- [2] https://yanglab.westlake.edu.cn/software/gcta/
++ 2 https://yanglab.westlake.edu.cn/software/gcta/
 
 <div id="Laurin2018"></div>
-- [3] https://github.com/amatrhr/g-remladp
++ 3 https://github.com/amatrhr/g-remladp
