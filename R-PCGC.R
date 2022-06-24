@@ -4,7 +4,7 @@
 ## function to obtain the R-PCGC estimators on case-control studies of the heritabilities 
 ## due to additive, parent-of-origin and maternal genetic effects.
 
-R-PCGC <- function(dir,K){
+RPCGC <- function(dir,K){
   # dir: the directory of files
   # K: the prevalence
 
