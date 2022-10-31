@@ -182,11 +182,11 @@ estima_CC <- function(dir1,times,nobs,K,P=0.5){
   XTX = crossprod(X_matrix)
   XTY = crossprod(X_matrix, y_matrix)
   
-  repcgc = solve.QP(Dmat = XTX, dvec=XTY, Amat = diag(1,3), bvec = rep(0, 3), meq=0, factorized=FALSE)$solution
+  rpcgc = solve.QP(Dmat = XTX, dvec=XTY, Amat = diag(1,3), bvec = rep(0, 3), meq=0, factorized=FALSE)$solution
   
   sum_XTX <- matrix(rowSums(apply(X_matrix,1,function(X) X%*%t(X))),nrow=3,byrow = F)
   inver_sum_XTX <- solve(sum_XTX)
-  write.csv(c(repcgc,sqrt(diag(inver_sum_XTX ))),paste0(dir,simname,"_RE-PCGC_",times,".txt"))
+  write.csv(c(rpcgc,sqrt(diag(inver_sum_XTX ))),paste0(dir,simname,"_R-PCGC_",times,".txt"))
   rm(list = ls())
 }
  
